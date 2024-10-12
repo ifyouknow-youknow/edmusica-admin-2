@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:nothing_bagel_app_template/MODELS/constants.dart';
-import 'package:nothing_bagel_app_template/MODELS/firebase.dart';
+import 'package:edmusica_admin/MODELS/constants.dart';
+import 'package:edmusica_admin/MODELS/firebase.dart';
 
 part 'toggles.dart';
 part 'strings.dart';

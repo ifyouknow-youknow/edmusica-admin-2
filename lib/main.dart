@@ -1,10 +1,11 @@
-import 'package:nothing_bagel_app_template/VIEWS/playground.dart';
+import 'package:edmusica_admin/VIEWS/login.dart';
+import 'package:edmusica_admin/VIEWS/playground.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:nothing_bagel_app_template/MODELS/DATAMASTER/datamaster.dart';
-import 'package:nothing_bagel_app_template/MODELS/firebase.dart';
-import 'package:nothing_bagel_app_template/firebase_options.dart';
+import 'package:edmusica_admin/MODELS/DATAMASTER/datamaster.dart';
+import 'package:edmusica_admin/MODELS/firebase.dart';
+import 'package:edmusica_admin/firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,7 +17,7 @@ void main() async {
 
   runApp(
     MaterialApp(
-      home: PlaygroundView(dm: dm),
+      home: Login(dm: dm),
     ),
     // initialRoute: "/",
     // routes: {

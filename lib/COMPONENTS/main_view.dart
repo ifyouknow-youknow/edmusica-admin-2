@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:nothing_bagel_app_template/COMPONENTS/alert_view.dart';
-import 'package:nothing_bagel_app_template/COMPONENTS/bubble_view.dart';
-import 'package:nothing_bagel_app_template/COMPONENTS/button_view.dart';
-import 'package:nothing_bagel_app_template/COMPONENTS/loading_view.dart';
-import 'package:nothing_bagel_app_template/COMPONENTS/text_view.dart';
-import 'package:nothing_bagel_app_template/MODELS/DATAMASTER/datamaster.dart';
-import 'package:nothing_bagel_app_template/MODELS/screen.dart';
+import 'package:edmusica_admin/COMPONENTS/alert_view.dart';
+import 'package:edmusica_admin/COMPONENTS/bubble_view.dart';
+import 'package:edmusica_admin/COMPONENTS/button_view.dart';
+import 'package:edmusica_admin/COMPONENTS/loading_view.dart';
+import 'package:edmusica_admin/COMPONENTS/text_view.dart';
+import 'package:edmusica_admin/MODELS/DATAMASTER/datamaster.dart';
+import 'package:edmusica_admin/MODELS/screen.dart';
 
 class MainView extends StatefulWidget {
   final DataMaster dm;
   final List<Widget> mobile;
+  final List<Widget>? landscape;
   final List<Widget>? tablet;
   final Color backgroundColor;
 
@@ -18,6 +19,7 @@ class MainView extends StatefulWidget {
     required this.dm,
     required this.mobile,
     this.tablet,
+    this.landscape,
     this.backgroundColor = Colors.white,
   });
 
@@ -41,6 +43,10 @@ class _MainViewState extends State<MainView> {
                   height: 46,
                 ),
                 if (getWidth(context) < 520) ...widget.mobile,
+                if (getWidth(context) >= 520 &&
+                    getWidth(context) < 720 &&
+                    widget.landscape != null)
+                  ...?widget.landscape,
                 if (getWidth(context) >= 520 && widget.tablet != null)
                   ...?widget.tablet
               ],

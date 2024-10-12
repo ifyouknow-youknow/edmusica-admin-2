@@ -6,9 +6,9 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:nothing_bagel_app_template/FUNCTIONS/misc.dart';
-import 'package:nothing_bagel_app_template/FUNCTIONS/server.dart';
-import 'package:nothing_bagel_app_template/MODELS/constants.dart';
+import 'package:edmusica_admin/FUNCTIONS/misc.dart';
+import 'package:edmusica_admin/FUNCTIONS/server.dart';
+import 'package:edmusica_admin/MODELS/constants.dart';
 
 FirebaseFirestore db = FirebaseFirestore.instance;
 FirebaseAuth auth = FirebaseAuth.instance;

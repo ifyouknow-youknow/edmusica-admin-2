@@ -1,11 +1,11 @@
-import 'package:nothing_bagel_app_template/MODELS/screen.dart';
+import 'package:edmusica_admin/MODELS/screen.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'package:nothing_bagel_app_template/COMPONENTS/button_view.dart';
-import 'package:nothing_bagel_app_template/COMPONENTS/padding_view.dart';
-import 'package:nothing_bagel_app_template/COMPONENTS/text_view.dart';
-import 'package:nothing_bagel_app_template/FUNCTIONS/colors.dart';
-import 'package:nothing_bagel_app_template/FUNCTIONS/date.dart';
+import 'package:edmusica_admin/COMPONENTS/button_view.dart';
+import 'package:edmusica_admin/COMPONENTS/padding_view.dart';
+import 'package:edmusica_admin/COMPONENTS/text_view.dart';
+import 'package:edmusica_admin/FUNCTIONS/colors.dart';
+import 'package:edmusica_admin/FUNCTIONS/date.dart';
 
 class CalendarView extends StatefulWidget {
   final Color backgroundColor;

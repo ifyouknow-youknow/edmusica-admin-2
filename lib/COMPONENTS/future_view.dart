@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nothing_bagel_app_template/COMPONENTS/loading_view.dart';
-import 'package:nothing_bagel_app_template/COMPONENTS/text_view.dart';
+import 'package:edmusica_admin/COMPONENTS/loading_view.dart';
+import 'package:edmusica_admin/COMPONENTS/text_view.dart';
 
 class FutureView extends StatefulWidget {
   final Future<dynamic> future;
