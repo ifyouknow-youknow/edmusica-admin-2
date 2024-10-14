@@ -22,7 +22,6 @@ class DataMaster with _DataMasterToggles, _DataMasterStrings, _DataMasterLists {
 // FUNCTIONS
   Future<bool> checkUser(String table) async {
     final user = await auth_CheckUser();
-    print(user);
     if (user != null) {
       var userDoc = await firebase_GetDocument('${appName}_$table', user.uid);
       if (userDoc.isNotEmpty) {
@@ -38,6 +37,7 @@ class DataMaster with _DataMasterToggles, _DataMasterStrings, _DataMasterLists {
         return false;
       }
     } else {
+      print('THERE IS NO USER');
       return false;
     }
   }

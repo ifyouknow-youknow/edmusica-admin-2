@@ -61,6 +61,10 @@ class _LoginState extends State<Login> {
         widget.dm.setToggleLoading(false);
       });
       nav_PushAndRemove(context, Dashboard(dm: widget.dm));
+    } else {
+     setState(() {
+       widget.dm.setToggleLoading(false);
+     });
     }
   }
 
